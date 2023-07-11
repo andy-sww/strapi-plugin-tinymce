@@ -59,14 +59,14 @@ const Wysiwyg = ({
                         </Typography>
                     )}
                 </Box>
-                <Button
+                {/* <Button
                     startIcon={<Landscape />}
                     variant="secondary"
                     fullWidth
                     onClick={handleToggleMediaLib}
                 >
                     Media library
-                </Button>
+                </Button> */}
                 <Editor
                     disabled={disabled}
                     name={name}
