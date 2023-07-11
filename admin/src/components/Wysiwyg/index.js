@@ -97,7 +97,7 @@ Wysiwyg.defaultProps = {
     error: undefined,
     intlLabel: "",
     required: false,
-    value: "",
+    value: "<p></p>",
 };
 
 Wysiwyg.propTypes = {
