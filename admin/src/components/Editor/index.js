@@ -26,7 +26,7 @@ const TinyEditor = ({ onChange, name, value }) => {
         !loading ?
             <Editor
                 tinymceScriptSrc={CUSTOM_VARIABLES.tinymce_source}
-                value={value}
+                value={value || "<p></p>"}
                 tagName={name}
                 onEditorChange={(editorContent) => {
                     onChange({ target: { name, value: editorContent } });
