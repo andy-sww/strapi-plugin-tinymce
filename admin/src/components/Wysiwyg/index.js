@@ -30,12 +30,10 @@ const Wysiwyg = ({
         assets.map((asset) => {
             if (asset.mime.includes("image")) {
                 const imgTag = `<p><img src="${asset.url}" alt="${asset.alt}"></img></p>`;
-                newValue = `${newValue}${imgTag}`;
+                newValue = value;
             }
-            if (asset.mime.includes("video")) {
-                const videoTag = `<video><source src="${asset.url}" alt="${asset.alt}"</source></video>`;
-                newValue = `${newValue}${videoTag}`;
-            }
+
+            // Handle videos and other type of files by adding some code
         });
 
         onChange({ target: { name, value: newValue } });
